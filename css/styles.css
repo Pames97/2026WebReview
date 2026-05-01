@@ -1,0 +1,299 @@
+/* ===============================================
+       CSS RESET & BASE STYLES
+=============================================== */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+/* -----------------------------------------------
+    TODO #2: SLLBOCES Color Scheme
+    Replace the placeholder values below with the
+    actual SLLBOCES colors:
+        Primary Blue:  #00539a
+        Primary Green: #008762
+        Light Gold:    #FFD66B
+        White:         #FFFFFF
+        Dark text:     #1A2B45
+        Light Blue:    #93a4cf
+        Light Green:   #92c3b2
+----------------------------------------------- */
+:root {
+     /* SLL BOCES Brand Colors */
+     --color-blue: #00539a;
+     --color-green:  #008762;
+     --color-gold:  #FFD66B;
+     --color-white: #FFFFFF;
+     --color-dark: #1a2b45;
+     --color-ltblue: #93a4cf;
+     --color-ltgreen: #92c3b2;
+
+     /* Topography */
+     --font-main: 'EB Garamond', Garamond, serif;
+     --font-bold: 'Oswald', Arial, sans-serif;
+
+     /* Spacing Scale */
+     --spacing-sm: 0.75rem;
+     --spacing-md: 1.5rem;
+     --spacing-lg: 3rem;
+
+     /* Borders */
+    --radius: 8px;
+    --border-gold: 2px solid var
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-dark);
+    line-height: 1.6;
+}
+
+/* ===============================================
+    NAVIGATION — Flexbox Required!
+    =============================================== */
+header {
+    background-color: var(--color-blue);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+/* TODO #3: Complete the Flexbox navigation styles.
+    The .main-nav should:
+    - Use display: flex
+    - Place the logo on the LEFT and links on the RIGHT
+    - Vertically center all items
+    - Add padding of 1rem 2rem
+    Hint: use justify-content and align-items            */
+.main-nav {
+    display: flex;   /* Flexbox activated */
+    justify-content: space-between; /* Logo left, nav right */
+    align-items: center; /* vetically centered */
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: var(--font-bold);
+}
+
+.nav-logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--color-gold);
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.5s;
+
+.nav-links a:hover {
+    
+}
+
+/* ===============================================
+    HERO IMAGE SECTION
+    =============================================== */
+/* TODO #4: Complete the hero image CSS.
+    - Set background-image to your hero image file
+        (place the image in an /images/ folder first)
+    - background-size should COVER the entire section
+    - background-position should CENTER the image
+    - Set a min-height of 100vh (full screen height)
+    - Add display:flex, align-items:center, justify-content:center */
+#hero {
+    background-image: url(../images/wPdamSunset.jpg);
+    background-size: ;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* Dark overlay on the hero image for text readability */
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 51, 102, 0.65)
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: var(--color-white);
+    z-index: 1;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    
+}
+
+.hero-content p {
+     /* TODO */ ;
+}
+
+.btn {
+     /* TODO */ ;
+}
+
+.btn:hover {
+     /* TODO */ ;
+}
+
+/* ===============================================
+    MAIN CONTENT SECTIONS
+    =============================================== */
+main {
+     /* TODO */ ;
+}
+
+section {
+     /* TODO */ ;
+}
+
+section:last-child {
+     /* TODO */ ;
+}
+
+.section-title {
+     /* TODO */ ;
+}
+
+.section-subtitle {
+     /* TODO */ ;
+}
+
+/* ===============================================
+    COURSES GRID — What I Learned
+    =============================================== */
+.courses-grid {
+     /* TODO */ ;
+}
+
+.course-card {
+     /* TODO */ ;
+}
+
+.course-card h3 {
+     /* TODO */ ;
+}
+
+.course-card ul {
+     /* TODO */ ;
+}
+
+.course-card li {
+     /* TODO */ ;
+}
+
+/* ===============================================
+    PROJECTS SECTION
+    =============================================== */
+.projects-grid {
+     /* TODO */ ;
+}
+
+.project-card {
+     /* TODO */ ;
+}
+
+.project-card-header {
+     /* TODO */ ;
+}
+
+.project-card-header h3 {
+     /* TODO */ ;
+}
+
+.project-card-body {
+     /* TODO */ ;
+}
+
+.project-card-body p {
+     /* TODO */ ;
+}
+
+.project-link {
+     /* TODO */ ;
+}
+
+.project-link:hover {
+     /* TODO */ ;
+}
+
+/* ===============================================
+    SKILLS TABLE
+    =============================================== */
+.skills-table {
+     /* TODO */ ;
+}
+
+.skills-table th {
+     /* TODO */ ;
+}
+
+.skills-table td {
+     /* TODO */ ;
+}
+
+.skills-table tr:nth-child(even) {
+     /* TODO */ ;
+}
+
+.skills-table tr:hover {
+     /* TODO */ ;
+}
+
+/* ===============================================
+    FOOTER — Flexbox Required!
+    =============================================== */
+footer {
+     /* TODO */ ;
+}
+
+/* TODO #5: Complete the footer Flexbox layout.
+    The .footer-container should:
+    - Use display: flex
+    - Wrap items when the screen is narrow (flex-wrap)
+    - Space the columns evenly across the footer
+    - Add a gap between columns               */
+.footer-container {
+     /* TODO */ ;
+}
+
+.footer-col h4 {
+     /* TODO */ ;
+}
+
+.footer-nav-links {
+     /* TODO */ ;
+}
+
+.footer-nav-links li {
+     /* TODO */ ;
+}
+
+.footer-nav-links a {
+     /* TODO */ ;
+}
+
+.footer-nav-links a:hover {
+     /* TODO */ ;
+}
+
+.footer-bottom {
+     /* TODO */ ;
+}
