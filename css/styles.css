@@ -134,58 +134,97 @@ header {
     text-align: center;
     color: var(--color-white);
     z-index: 1;
-    padding: 2rem;
+    padding-top: 15rem;
 }
 
 .hero-content h1 {
-    
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5)
 }
 
 .hero-content p {
-     /* TODO */ ;
+     font-size: 1.4rem;
+     color: var(--color-gold);
+     margin-bottom: 1.5rem;
 }
 
 .btn {
-     /* TODO */ ;
+     display: inline-block;
+     background-color: var(--color-gold);
+     color: var(--color-blue);
+     padding: 0.8rem 2rem;
+     border-radius: 4px;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 1.1rem;
+     transition: background-color 0.5s;
 }
 
 .btn:hover {
-     /* TODO */ ;
+     background-color: var(--color-ltgreen);
 }
 
 /* ===============================================
     MAIN CONTENT SECTIONS
     =============================================== */
 main {
-     /* TODO */ ;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 2rem;
+     font-family: var(--font-reg);
+}
+main p {
+     margin-bottom: 1rem;
+}
+
+main #about p{
+     max-width: 800px;
 }
 
 section {
-     /* TODO */ ;
+     padding: 4rem 0;
+     border-bottom: 2px solid var(--color-ltblue)
 }
 
 section:last-child {
-     /* TODO */ ;
+     border-bottom: none;
 }
 
 .section-title {
-     /* TODO */ ;
+     font-size: 2rem;
+     color: var(--color-dark);
+     margin-bottom: 0.5rem;
+     padding-bottom: 0.5rem;
+     border-left: 5px solid var(--color-green);
+     padding-left: 1rem;
 }
 
 .section-subtitle {
-     /* TODO */ ;
+     color: #666;
+     margin-bottom: 2rem;
+     font-style: italic;
 }
 
 /* ===============================================
     COURSES GRID — What I Learned
     =============================================== */
 .courses-grid {
-     /* TODO */ ;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+     margin-top: 1.5rem;
 }
 
 .course-card {
-     /* TODO */ ;
-}
+     flex: 1 1 220px;
+     background: var(--color-white);
+     border: 2px solid var(--color-ltblue);
+     border-top: 5px solid var(--color-green);
+     border-radius: 6px;
+     padding: 1.5rem;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+     
 
 .course-card h3 {
      /* TODO */ ;
