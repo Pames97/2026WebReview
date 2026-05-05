@@ -40,7 +40,7 @@
 
      /* Borders */
     --radius: 8px;
-    --border-gold: 2px solid var
+    --border-gold: 2px solid var;
 }
 
 body {
@@ -113,7 +113,7 @@ header {
     - Add display:flex, align-items:center, justify-content:center */
 #hero {
     background-image: url(../images/wPdamSunset.jpg);
-    background-size: ;
+    background-size: cover;
     background-position: center;
     min-height: 100vh;
 }
@@ -231,76 +231,106 @@ section:last-child {
 }
 
 .course-card ul {
-     /* TODO */ ;
 }
 
 .course-card li {
-     /* TODO */ ;
+     margin-bottom: 0.4rem;
+     font-size:0.95rem
 }
 
 /* ===============================================
     PROJECTS SECTION
     =============================================== */
 .projects-grid {
-     /* TODO */ ;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+     margin-top: 1.5rem;
 }
 
 .project-card {
-     /* TODO */ ;
+     flex: 1 1 260px;
+     border: 2px dashed var(--color-green);
+     border-radius: 6px;
+     overflow: hidden;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3)
 }
 
 .project-card-header {
-     /* TODO */ ;
+     background-color: var(--color-dark);
+     padding: 1rem 1.2rem;
+     color: var(--color-gold);
 }
 
 .project-card-header h3 {
-     /* TODO */ ;
+     color: var(--color-green);
 }
 
 .project-card-body {
-     /* TODO */ ;
+     padding: 1rem 1.2rem;
 }
 
 .project-card-body p {
-     /* TODO */ ;
+     margin-bottom: 1rem;
+     font-size: 0.95rem;
 }
 
 .project-link {
-     /* TODO */ ;
+     display: inline-block;
+     background-color: var(--color-dark);
+     color: var(--color-white);
+     padding: 0.4rem 1rem;
+     text-decoration: none;
+     font-size: 0.9rem;
+     border-radius: var(--radius);
+     transition: background-color 0.5s;
 }
 
 .project-link:hover {
-     /* TODO */ ;
+     background-color: var(--color-blue);
+     color: var(--color-gold);
 }
 
 /* ===============================================
     SKILLS TABLE
     =============================================== */
 .skills-table {
-     /* TODO */ ;
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: var(--spacing-sm);
 }
+
+.skills-table th,
+.skills-table td {
+     padding: 0.6rem 1rem;
+     border: 1px solid #ddd;
+     text-align: left;
+}
+
 
 .skills-table th {
-     /* TODO */ ;
-}
-
-.skills-table td {
-     /* TODO */ ;
+     background-color: var(--color-dark);
+     color: var(var(--color-gold));
+     font-weight: 600;
 }
 
 .skills-table tr:nth-child(even) {
-     /* TODO */ ;
+     background-color: var(--color-ltblue);
+     color: var(--color-white)
 }
 
 .skills-table tr:hover {
-     /* TODO */ ;
+     background-color: var(--color-blue);
+     color: var(--color-white)
 }
 
 /* ===============================================
     FOOTER — Flexbox Required!
     =============================================== */
 footer {
-     /* TODO */ ;
+     background-color: var(--color-dark);
+     color: var(--color-white);
+     padding: 2.5rem 2rem 1rem;
 }
 
 /* TODO #5: Complete the footer Flexbox layout.
@@ -310,29 +340,48 @@ footer {
     - Space the columns evenly across the footer
     - Add a gap between columns               */
 .footer-container {
-     /* TODO */ ;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     gap: 2rem;
+     max-width: 1200px;
+     margin: 0 auto;
+}
+
+.footer-col {
+     min-width: 140px;
 }
 
 .footer-col h4 {
-     /* TODO */ ;
+     color: var(--color-gold);
+     margin-bottom: 1rem;
+     font-size: 1.2rem;
+     border-bottom: 1px solid #92c3b288;
+     padding-bottom: 0.5rem;
 }
 
 .footer-nav-links {
-     /* TODO */ ;
+     margin-bottom: 0.5rem;
 }
 
 .footer-nav-links li {
-     /* TODO */ ;
+     color: var(--color-white);
+     text-decoration: none;
+     transition: color 0.5s;
 }
 
 .footer-nav-links a {
-     /* TODO */ ;
+     color: var(--color-white);
+     text-decoration: none;
+     transition: color 0.5s;
 }
 
 .footer-nav-links a:hover {
-     /* TODO */ ;
+     color: var(--color-gold);
 }
 
 .footer-bottom {
-     /* TODO */ ;
+     text-align: center;
+     margin-top: 2rem;
+     padding-top: 1rem;
 }
